@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration form">
+    <meta name="keywords" content="Registration">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./gym-ball.png">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <form action="https://jsonplaceholder.typicode.com/todos/1" method="get" class="regform">
+        <h1>Registration</h1>
+        <div class="regform-name">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" placeholder="Enter name" id="name" class="inp">
+        </div>
+        <div class="regform-email">
+            <label for="email" class="input-label">E-mail</label>
+            <input type="email" placeholder="Enter e-mail" id="email" class="inp">
+        </div>
+        <div class="regform-password">
+            <label for="pass" class="input-label">Password</label>
+            <input type="password" placeholder="Enter password" id="pass" class="inp">
+        </div>
+        <div class="regform-passwordConfirm">
+            <label for="comfirm" class="input-label">Confirm password</label>
+            <input type="password" placeholder="Confirm your password" id="comfirm" class="inp">
+        </div>
+        <div class="regform-kex">
+            <input type="radio" id="rad" name="radio1">
+            <label for="rad">Male</label>
+            <input type="radio" id="radi" name="radio1">
+            <label for="radi">Female</label>
+        </div>
+        <div class="regform-biography">
+            <textarea name="biografy" id="biografy" class="inp"></textarea>
+            <label for="biografy" class="input-label">Your biography</label>
+
+        </div>
+        <div class="regform-policy">
+            <div class="regform-policy-agree">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree with Terms and Conditions</label>
+            </div>
+            <div class="regform-policy-sub">
+
+                <label for="sub"><input type="checkbox" id="sub">Subscribe to our newsletter</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="submit">SUBMIT</button>
+            <button type="reset"><img src="./refresh.png" alt="reset icon">RESET</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F8F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body .regform {
+  padding: 71px 48px 48px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.0784313725);
+  margin: 43px 0;
+}
+body .regform h1 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+body .regform-name, body .regform-email, body .regform-password, body .regform-passwordConfirm, body .regform-biography {
+  position: relative;
+}
+body .regform-policy-agree input[type=checkbox], body .regform-policy-sub input[type=checkbox] {
+  margin: 3px 8px 3px 3px;
+  width: 18px;
+  height: 18px;
+}
+body .regform .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+body .regform .buttons button[type=reset] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+body .regform button {
+  width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #00BCD4;
+  border-radius: 3px;
+  border: none;
+}
+body .regform button:nth-child(2) {
+  background-color: #291C44;
+}
+body .regform .input-label {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.5411764706);
+  position: absolute;
+  top: 12px;
+  left: 9px;
+}
+body .regform .inp {
+  width: 559px;
+  height: 56px;
+  background-color: rgba(51, 51, 51, 0.0588235294);
+  border: none;
+  position: relative;
+  padding: 12px 0 0 9px;
+}
+body .regform .inp:focus {
+  outline: none;
+  border-bottom: 2px solid #DB4437;
+}
+body .regform-kex {
+  font-size: 14px;
+}
+body .regform-kex input {
+  margin-right: 10px;
+}
+body .regform-kex label {
+  margin-right: 19px;
+}
+body .regform-biography textarea {
+  padding: 45px 12px 12px 12px !important;
+  resize: none;
+  height: 99px !important;
+}
+body .regform-biography textarea:focus {
+  border-bottom: 2px solid #00BCD4 !important;
+}
+
+/*# sourceMappingURL=gotow.css.map */

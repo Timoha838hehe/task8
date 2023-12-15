@@ -1,0 +1,129 @@
+$forinput: #DB4437;
+$labelcolor: #0000008A;
+$fortextar: #00BCD4;
+@mixin label-style(){
+    font-size: 12px;
+    line-height: 12px;
+    color: $labelcolor;
+}
+@mixin input-style(){
+    width: 559px;
+    height: 56px;
+    background-color: #3333330F;
+    border: none;
+}
+@mixin flexbutton (){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F7F8F9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    .regform{
+        h1{
+            font-size: 36px;
+            margin-bottom: 65px;
+        }
+        padding: 71px 48px 48px 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 24px;
+        background-color: #FFFFFF;
+        -webkit-box-shadow: 1px 2px 20px 0px #00000014;
+                box-shadow: 1px 2px 20px 0px #00000014;
+        margin: 43px 0;
+        &-name, &-email, &-password, &-passwordConfirm, &-biography{
+            position: relative;
+        }
+        &-policy{
+            &-agree input[type="checkbox"], &-sub input[type="checkbox"]{
+                margin: 3px 8px 3px 3px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+        .buttons{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 16px;
+            button[type="reset"]{
+                @include flexbutton();
+            } 
+        }
+
+        button{
+            width: 96px;
+            height: 36px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            background-color: $fortextar;
+            border-radius: 3px;
+            border: none;
+        }
+        button:nth-child(2){
+            background-color: #291C44
+        }
+        .input-label{
+            @include label-style();
+            position: absolute;
+            top: 12px;
+            left: 9px; 
+        }
+        .inp{
+            @include input-style();
+            position: relative;
+            padding: 12px 0 0 9px;
+            &:focus{
+                outline: none;
+                border-bottom: 2px solid $forinput;
+            }
+        }
+        &-kex{
+            input{
+                margin-right: 10px;
+            }
+            label{
+                margin-right: 19px;
+            }
+            font-size: 14px;
+        }
+        &-biography{
+            textarea{
+                padding: 45px 12px 12px 12px !important;
+                resize: none;
+                height: 99px !important;
+                &:focus{
+                    border-bottom: 2px solid $fortextar !important;
+                }
+            }
+        }
+    }
+}
